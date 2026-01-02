@@ -12,7 +12,9 @@ import {
   MessageCircle,
   Code2,
   Zap,
-  Layout
+  Layout,
+  Instagram,
+  Facebook
 } from "lucide-react";
 import logoImg from "@assets/siteja_1767366897616.png";
 import heroVideo from "@assets/home_-_segunda_opção_1767366905462.mp4";
@@ -46,6 +48,12 @@ export default function Home() {
     { name: "Como funciona", to: "how-it-works" },
     { name: "Diferenciais", to: "features" },
     { name: "Planos", to: "pricing" },
+  ];
+
+  const stats = [
+    { label: "Sites entregues", value: "+100" },
+    { label: "Design Responsivo", value: "100%" },
+    { label: "Entrega média", value: "72h" },
   ];
 
   return (
@@ -154,8 +162,8 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold font-display tracking-tighter text-white mb-6"
           >
-            Sua Empresa <br/>
-            <span className="text-primary text-glow">Online Agora</span>
+            Seu site profissional <br/>
+            <span className="text-primary text-glow">em até 72 horas</span>
           </motion.h1>
 
           <motion.p 
@@ -164,8 +172,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            Tenha um site profissional, rápido e otimizado para vendas.
-            Transforme visitantes em clientes com a Site Já.
+            Criamos sites rápidos, modernos e focados em gerar contatos e vendas.
           </motion.p>
 
           <motion.div 
@@ -194,19 +201,28 @@ export default function Home() {
           </motion.div>
         </motion.div>
 
-        {/* Scroll Indicator */}
-        <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 1 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-white/50"
-        >
-          <motion.div 
-            animate={{ y: [0, 8, 0] }}
-            transition={{ repeat: Infinity, duration: 1.5 }}
-            className="w-0.5 h-12 bg-gradient-to-b from-primary to-transparent"
-          />
-        </motion.div>
+        {/* Scroll Indicator removed */}
+      </section>
+
+      {/* Social Proof / Stats */}
+      <section className="py-12 border-y border-white/5 bg-black/20">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
+            {stats.map((stat, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="flex flex-col items-center"
+              >
+                <span className="text-3xl md:text-4xl font-bold text-primary mb-1">{stat.value}</span>
+                <span className="text-xs md:text-sm text-gray-400 uppercase tracking-widest">{stat.label}</span>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* How It Works Section */}
@@ -226,18 +242,18 @@ export default function Home() {
             {[
               { 
                 icon: Layout, 
-                title: "1. Escolha o Plano", 
-                desc: "Selecione o pacote ideal para o momento do seu negócio." 
+                title: "1. Escolha o plano", 
+                desc: "Selecione o pacote ideal." 
               },
               { 
                 icon: MessageCircle, 
-                title: "2. Envie os Dados", 
-                desc: "Nos conte sobre sua empresa e envie seu conteúdo via WhatsApp." 
+                title: "2. Envie as informações", 
+                desc: "Nos envie o conteúdo via WhatsApp." 
               },
               { 
                 icon: Rocket, 
-                title: "3. Site no Ar", 
-                desc: "Em até 72 horas seu site estará pronto para vender." 
+                title: "3. Site pronto em até 72h", 
+                desc: "Seu site no ar com rapidez." 
               },
             ].map((step, index) => (
               <motion.div 
@@ -249,6 +265,9 @@ export default function Home() {
                 className="relative z-10 flex flex-col items-center text-center group"
               >
                 <div className="w-24 h-24 rounded-2xl bg-secondary border border-white/5 flex items-center justify-center mb-6 shadow-lg shadow-black group-hover:border-primary/50 group-hover:shadow-[0_0_20px_rgba(57,255,20,0.2)] transition-all duration-300">
+                  <span className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-primary text-black font-bold flex items-center justify-center text-sm z-20">
+                    {index + 1}
+                  </span>
                   <step.icon className="w-10 h-10 text-white group-hover:text-primary transition-colors" />
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-white">{step.title}</h3>
@@ -273,12 +292,12 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { icon: Clock, title: "Entrega em 72h", desc: "Processo otimizado para você não perder tempo." },
-              { icon: MonitorSmartphone, title: "100% Responsivo", desc: "Funciona perfeitamente em celulares, tablets e PCs." },
-              { icon: CreditCard, title: "Sem Mensalidade", desc: "Pagamento único pelo desenvolvimento do site." },
-              { icon: Code2, title: "Tecnologia Moderna", desc: "Site rápido, seguro e otimizado para o Google (SEO)." },
-              { icon: Zap, title: "Alta Performance", desc: "Carregamento instantâneo para não perder visitantes." },
-              { icon: CheckCircle2, title: "Suporte Dedicado", desc: "Acompanhamento total durante o processo." },
+              { icon: Rocket, title: "Sites prontos em até 72h", desc: "Processo otimizado para entrega recorde." },
+              { icon: MonitorSmartphone, title: "Focado no Celular", desc: "Seu site funciona perfeitamente em qualquer tela." },
+              { icon: MessageCircle, title: "Contato via WhatsApp", desc: "Facilitamos o contato direto dos seus clientes." },
+              { icon: Zap, title: "Carregamento Rápido", desc: "Velocidade total para não perder nenhum visitante." },
+              { icon: Layout, title: "Focado em Conversão", desc: "Estrutura pensada para gerar novos contatos." },
+              { icon: CheckCircle2, title: "Processo Simples", desc: "Sem burocracia, direto ao ponto." },
             ].map((feature, i) => (
               <motion.div
                 key={i}
@@ -314,14 +333,12 @@ export default function Home() {
               index={0}
               title="Landing Page"
               price="599"
-              description="Ideal para campanhas e produtos específicos. Uma página focada em conversão."
+              description="Ideal para campanhas e vendas rápidas."
               onSelectUrl="https://buy.stripe.com/dRmeVd01mfLT9Eg5Oy1B600"
               features={[
-                { text: "Página Única (One Page)", included: true },
-                { text: "Design Responsivo", included: true },
+                { text: "Página Única Premium", included: true },
+                { text: "100% Responsivo", included: true },
                 { text: "Botão WhatsApp", included: true },
-                { text: "Formulário de Contato", included: true },
-                { text: "Otimização SEO Básica", included: true },
               ]}
             />
             
@@ -330,15 +347,13 @@ export default function Home() {
               isPopular={true}
               title="Site Essencial"
               price="799"
-              description="Perfeito para prestadores de serviço e pequenas empresas que precisam de presença digital."
+              description="Perfeito para pequenas empresas e serviços."
               onSelectUrl="https://buy.stripe.com/eVqbJ101m0QZ2bOfp81B601"
               features={[
                 { text: "Até 3 Páginas", included: true },
-                { text: "Design Premium Responsivo", included: true },
-                { text: "Botão WhatsApp Flutuante", included: true },
-                { text: "Formulário de Contato", included: true },
-                { text: "Otimização SEO Completa", included: true },
-                { text: "Integração Google Maps", included: true },
+                { text: "Design Premium", included: true },
+                { text: "WhatsApp Flutuante", included: true },
+                { text: "Google Maps", included: false },
               ]}
             />
             
@@ -346,14 +361,13 @@ export default function Home() {
               index={2}
               title="Site Profissional"
               price="999"
-              description="Para empresas que buscam autoridade e funcionalidades avançadas."
+              description="Autoridade máxima para o seu negócio."
               onSelectUrl="https://buy.stripe.com/14A6oH01mbvDdUw6SC1B602"
               features={[
                 { text: "Até 5 Seções", included: true },
-                { text: "Design Exclusivo", included: true },
-                { text: "Tudo do plano Essencial", included: true },
-                { text: "Blog / Notícias", included: true },
-                { text: "Integração Redes Sociais", included: true },
+                { text: "Tudo do Essencial", included: true },
+                { text: "Google Maps Incluso", included: true },
+                { text: "Blog de Notícias", included: true },
               ]}
             />
           </div>
@@ -386,6 +400,15 @@ export default function Home() {
           >
             Sites profissionais prontos em até 72 horas
           </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-xl md:text-2xl font-medium mb-10 max-w-2xl mx-auto text-black/80"
+          >
+            Processo simples, sem mensalidade e sem complicação. Atendemos um número limitado de projetos por semana.
+          </motion.p>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -416,10 +439,15 @@ export default function Home() {
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Contato</a>
             </div>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-black transition-all">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-black transition-all">
                 <MessageCircle className="w-5 h-5" />
               </a>
-              {/* Add social icons as needed */}
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-black transition-all">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-black transition-all">
+                <Facebook className="w-5 h-5" />
+              </a>
             </div>
           </div>
           <div className="border-t border-white/10 pt-8 text-center text-sm text-gray-500">

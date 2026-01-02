@@ -1,0 +1,90 @@
+Refine e otimize o site institucional existente da agência “Site Já”, mantendo o layout dark moderno e identidade visual atual, porém ajustando copy, hierarquia visual e estrutura para aumentar conversão, clareza e impacto comercial.
+
+OBJETIVO PRINCIPAL:
+Transformar o site em uma landing page altamente vendedora, deixando extremamente clara a proposta de valor: sites profissionais prontos em até 72 horas.
+
+============================
+AJUSTES ESTRATÉGICOS
+============================
+
+1) HERO / PRIMEIRA DOBRA
+- Atualizar a headline principal para destacar explicitamente o prazo de entrega.
+  Substituir por uma das opções (ou variação semelhante):
+  • “Seu site profissional pronto em até 72 horas.”
+  • “Coloque sua empresa online em até 72 horas.”
+- Manter o destaque visual no texto principal com a cor verde.
+- Enxugar o subtítulo para uma frase curta, direta e orientada a benefício.
+  Exemplo:
+  “Criamos sites rápidos, modernos e focados em gerar contatos e vendas.”
+- Manter apenas os dois CTAs principais.
+- Evitar qualquer texto genérico ou longo.
+- Todo o conteúdo do hero deve estar bem centralizado e com ótima leitura.
+
+2) COMO FUNCIONA
+- Tornar a seção mais visual e impactante.
+- Aumentar o destaque visual dos números 1, 2 e 3.
+- Usar frases extremamente curtas e diretas:
+  1. Escolha o plano
+  2. Envie as informações
+  3. Site pronto em até 72h
+- O objetivo dessa seção é transmitir simplicidade e rapidez.
+
+3) DIFERENCIAIS (FOCO EM BENEFÍCIO)
+- Reescrever os diferenciais usando linguagem comercial, não técnica.
+- Evitar termos excessivamente técnicos.
+- Exemplos de diferenciais:
+  • 🚀 Sites prontos em até 72 horas
+  • 📱 Funcionam perfeitamente no celular
+  • 💬 Contato direto via WhatsApp
+  • ⚡ Carregamento rápido
+  • 🎯 Estrutura focada em gerar contatos
+- Organizar em cards simples, bem espaçados e fáceis de ler.
+
+4) PLANOS E PREÇOS
+- Manter os três planos existentes e seus valores.
+- Reduzir a quantidade de bullets por plano (máximo 3 ou 4).
+- Usar descrições simples e objetivas.
+- Evitar detalhes técnicos excessivos.
+- Ajustar o texto do botão de CTA para algo mais orientado à ação, como:
+  • “Quero meu site agora”
+  • “Pagar e iniciar projeto”
+- Manter o plano intermediário ou profissional em destaque visual.
+
+5) CTA FINAL
+- Manter a seção verde de destaque.
+- Reforçar urgência com uma frase curta adicional, como:
+  • “Processo simples, sem mensalidade e sem complicação.”
+  ou
+  • “Atendemos um número limitado de projetos por semana.”
+- CTA forte e direto para WhatsApp ou pagamento.
+
+6) PROVA SOCIAL (SE POSSÍVEL)
+- Incluir uma prova social simples para gerar confiança:
+  • Depoimentos curtos
+  ou
+  • Indicadores como:
+    +100 sites entregues
+    100% responsivo
+    Entrega média em 72h
+- A prova social deve ser discreta, mas visível.
+
+============================
+DIRETRIZES GERAIS
+============================
+- Manter o visual dark moderno com verde como cor de destaque.
+- Reduzir textos longos em todo o site.
+- Melhorar hierarquia visual (títulos, subtítulos e espaçamento).
+- Garantir ótima leitura e navegação no mobile.
+- Não adicionar novas seções desnecessárias.
+- Priorizar clareza, rapidez de entendimento e conversão.
+
+RESULTADO ESPERADO:
+Um site mais direto, mais profissional e mais vendedora, que deixa claro em poucos segundos:
+o que é a Site Já, para quem é, e por que comprar agora.
+
+============================
+Retirar seta indicando sentido de rolar a página, próximo ao botão de "solitar orçamento."
+
+Deixar Integração de google maps apenas no plano profissional
+
+No rodapé, incluir ao lado do botão de whats app os ícones do instagram e facebook.

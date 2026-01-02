@@ -82,7 +82,7 @@ export function PricingCard({
         className="w-full"
         onClick={() => window.open(onSelectUrl, "_blank")}
       >
-        Contratar Agora
+        Quero meu site agora
       </NeonButton>
     </motion.div>
   );
