@@ -14,7 +14,7 @@ interface PricingCardProps {
   description: string;
   features: PricingFeature[];
   isPopular?: boolean;
-  onSelect: () => void;
+  onSelectUrl: string;
   index: number;
 }
 
@@ -24,7 +24,7 @@ export function PricingCard({
   description, 
   features, 
   isPopular = false, 
-  onSelect,
+  onSelectUrl,
   index 
 }: PricingCardProps) {
   return (
@@ -80,9 +80,9 @@ export function PricingCard({
       <NeonButton 
         variant={isPopular ? "primary" : "outline"} 
         className="w-full"
-        onClick={onSelect}
+        onClick={() => window.open(onSelectUrl, "_blank")}
       >
-        Selecionar Plano
+        Contratar Agora
       </NeonButton>
     </motion.div>
   );

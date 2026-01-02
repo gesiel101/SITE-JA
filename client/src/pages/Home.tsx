@@ -201,7 +201,6 @@ export default function Home() {
           transition={{ delay: 1.5, duration: 1 }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-white/50"
         >
-          <span className="text-xs uppercase tracking-widest">Role para ver</span>
           <motion.div 
             animate={{ y: [0, 8, 0] }}
             transition={{ repeat: Infinity, duration: 1.5 }}
@@ -316,15 +315,13 @@ export default function Home() {
               title="Landing Page"
               price="599"
               description="Ideal para campanhas e produtos específicos. Uma página focada em conversão."
-              onSelect={handleWhatsapp}
+              onSelectUrl="https://buy.stripe.com/dRmeVd01mfLT9Eg5Oy1B600"
               features={[
                 { text: "Página Única (One Page)", included: true },
                 { text: "Design Responsivo", included: true },
                 { text: "Botão WhatsApp", included: true },
                 { text: "Formulário de Contato", included: true },
                 { text: "Otimização SEO Básica", included: true },
-                { text: "Hospedagem Inclusa (1 ano)", included: false },
-                { text: "Contas de E-mail", included: false },
               ]}
             />
             
@@ -334,7 +331,7 @@ export default function Home() {
               title="Site Essencial"
               price="799"
               description="Perfeito para prestadores de serviço e pequenas empresas que precisam de presença digital."
-              onSelect={handleWhatsapp}
+              onSelectUrl="https://buy.stripe.com/eVqbJ101m0QZ2bOfp81B601"
               features={[
                 { text: "Até 3 Páginas", included: true },
                 { text: "Design Premium Responsivo", included: true },
@@ -342,7 +339,6 @@ export default function Home() {
                 { text: "Formulário de Contato", included: true },
                 { text: "Otimização SEO Completa", included: true },
                 { text: "Integração Google Maps", included: true },
-                { text: "Painel Administrativo", included: false },
               ]}
             />
             
@@ -351,27 +347,31 @@ export default function Home() {
               title="Site Profissional"
               price="999"
               description="Para empresas que buscam autoridade e funcionalidades avançadas."
-              onSelect={handleWhatsapp}
+              onSelectUrl="https://buy.stripe.com/14A6oH01mbvDdUw6SC1B602"
               features={[
-                { text: "Até 6 Páginas", included: true },
+                { text: "Até 5 Seções", included: true },
                 { text: "Design Exclusivo", included: true },
                 { text: "Tudo do plano Essencial", included: true },
                 { text: "Blog / Notícias", included: true },
-                { text: "Painel Administrativo", included: true },
                 { text: "Integração Redes Sociais", included: true },
-                { text: "Google Analytics", included: true },
               ]}
             />
           </div>
-          
-          <div className="mt-12 text-center">
-            <p className="text-muted-foreground mb-4">Precisa de algo mais específico? E-commerce ou Sistema?</p>
-            <button onClick={handleWhatsapp} className="text-primary hover:text-primary/80 underline font-medium">
-              Fale conosco para um projeto personalizado
-            </button>
-          </div>
         </div>
       </section>
+
+      {/* Floating WhatsApp Button */}
+      <motion.a
+        href={whatsappLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        whileHover={{ scale: 1.1 }}
+        className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:shadow-[#25D366]/50 transition-all duration-300 flex items-center justify-center"
+      >
+        <MessageCircle className="w-8 h-8" />
+      </motion.a>
 
       {/* CTA Final */}
       <section className="py-24 bg-primary text-black relative overflow-hidden">
@@ -384,17 +384,8 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-8 tracking-tight"
           >
-            Pronto para Decolar?
+            Sites profissionais prontos em até 72 horas
           </motion.h2>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="text-xl md:text-2xl font-medium mb-10 max-w-2xl mx-auto text-black/80"
-          >
-            Não perca mais clientes para a concorrência. Tenha seu site profissional no ar essa semana.
-          </motion.p>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
