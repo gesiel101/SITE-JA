@@ -1,0 +1,186 @@
+Criar um site institucional completo, responsivo e pronto para produção para uma agência de criação de sites chamada SITE JÁ, com visual premium inspirado em templates modernos de agências (estilo dark, tecnológico e profissional).
+
+🧩 Requisitos gerais
+
+Gerar HTML, CSS e JS puros (sem frameworks)
+
+Código limpo, organizado e comentado
+
+Estrutura pronta para hospedagem estática (Replit, Vercel, Netlify)
+
+Mobile-first e totalmente responsivo
+
+Conteúdo centralizado na home e no rodapé
+
+Idioma: Português (Brasil)
+
+🎨 Identidade visual
+
+Estilo: Dark moderno
+
+Cores:
+
+Fundo: preto / verde escuro
+
+Destaque: verde neon
+
+Tipografia moderna (ex: Inter ou similar)
+
+Cards com bordas arredondadas
+
+Visual inspirado em site de agência premium
+
+🎥 HERO SECTION
+
+Hero ocupando 100% da tela (100vh)
+
+Vídeo como plano de fundo no desktop
+O vídeo está em anexo
+
+Overlay escuro para leitura
+
+Texto e botões sobre o vídeo
+
+No mobile:
+
+Vídeo desativado
+
+Usar imagem estática (poster)
+
+Conteúdo do hero:
+
+Headline curta e direta
+
+Subtítulo resumido
+
+Dois botões:
+
+“Solicitar orçamento” (WhatsApp)
+
+“Ver planos”
+
+✂️ Conteúdo (resumido e direto)
+
+Evitar textos longos. Linguagem clara, comercial e objetiva.
+
+🧭 Seções obrigatórias
+
+Header fixo
+
+Logo: “Site Já”
+
+CTA “Ver planos”
+
+Hero (com vídeo)
+
+Frase principal focada em venda
+
+CTA claro
+
+Como funciona
+
+3 passos simples:
+
+Escolha o plano
+
+Envie as informações
+
+Site pronto em até 72h
+
+Planos e preços
+
+Landing Page – R$ 599
+
+Site Essencial – R$ 799
+
+🔹 até 3 seções
+
+Site Profissional – R$ 999
+
+🔹 até 5 seções
+
+Cards destacados
+
+CTA em cada plano
+
+Não incluir nenhum card extra além dos planos
+
+Diferenciais
+
+Entrega em 72h
+
+Visual profissional
+
+Sem mensalidade obrigatória
+
+Processo simples
+
+Foco em conversão
+
+Atendimento direto
+
+CTA Final
+
+Chamada forte para conversão
+
+Botão WhatsApp
+
+Rodapé
+
+Conteúdo centralizado
+
+Texto simples:
+
+© Site Já – Todos os direitos reservados
+
+❌ Remoções obrigatórias
+
+Remover completamente o card ou seção:
+“Você é o dono do seu site”
+
+Não usar textos longos ou blocos excessivos
+
+Não criar seções extras fora das listadas
+
+📱 Responsividade
+
+Layout deve se adaptar perfeitamente para:
+
+Desktop
+
+Tablet
+
+Mobile
+
+Grid fluido
+
+Botões grandes no mobile
+
+Texto centralizado e legível
+
+⚙️ Detalhes técnicos
+
+Usar CSS Grid e Flexbox
+
+Usar variáveis CSS
+
+Criar fallback de imagem para o vídeo no mobile
+
+SEO básico:
+
+<title>
+
+<meta description>
+
+Não usar bibliotecas externas JS
+
+Criar arquivos separados:
+
+index.html
+
+style.css
+
+script.js
+
+No botão de CTA inserir o Whatsapp: https://wa.me/559491614484
+Usar a logo "siteja" em anexo 
