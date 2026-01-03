@@ -1,0 +1,83 @@
+{
+  "site_info": {
+    "name": "Site Já",
+    "description": "Seu site profissional em até 72 horas",
+    "accent_color": "#39FF14",
+    "background_color": "#000000",
+    "whatsapp": "559491614484"
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "title": "Seu site profissional em até 72 horas",
+      "subtitle": "Sites profissionais em 72h",
+      "description": "Criamos sites rápidos, modernos e focados em gerar contatos e vendas.",
+      "cta_text": "Solicitar Orçamento",
+      "video_url": "home_-_segunda_opção_1767366905462.mp4"
+    },
+    {
+      "id": "stats",
+      "items": [
+        { "label": "Sites entregues", "value": "+100" },
+        { "label": "Design Responsivo", "value": "100%" },
+        { "label": "Entrega média", "value": "72h" }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "title": "Como Funciona",
+      "subtitle": "Processo simplificado para você ter seu site no ar sem dor de cabeça.",
+      "steps": [
+        { "title": "1. Escolha o plano", "desc": "Selecione o pacote ideal." },
+        { "title": "2. Envie as informações", "desc": "Nos envie o conteúdo via WhatsApp." },
+        { "title": "3. Site pronto em até 72h", "desc": "Seu site no ar com rapidez." }
+      ]
+    },
+    {
+      "id": "features",
+      "title": "Por que a Site Já?",
+      "subtitle": "Não entregamos apenas código, entregamos resultados para o seu negócio.",
+      "items": [
+        { "title": "Sites prontos em até 72h", "desc": "Processo otimizado para entrega recorde." },
+        { "title": "Focado no Celular", "desc": "Seu site funciona perfeitamente em qualquer tela." },
+        { "title": "Contato via WhatsApp", "desc": "Facilitamos o contato direto dos seus clientes." },
+        { "title": "Carregamento Rápido", "desc": "Velocidade total para não perder nenhum visitante." },
+        { "title": "Focado em Conversão", "desc": "Estrutura pensada para gerar novos contatos." },
+        { "title": "Processo Simples", "desc": "Sem burocracia, direto ao ponto." }
+      ]
+    },
+    {
+      "id": "pricing",
+      "title": "Nossos Planos",
+      "subtitle": "Investimento único. Resultado contínuo.",
+      "plans": [
+        {
+          "title": "Landing Page",
+          "price": "599",
+          "description": "Ideal para campanhas e vendas rápidas.",
+          "url": "https://buy.stripe.com/dRmeVd01mfLT9Eg5Oy1B600",
+          "features": ["Página Única Premium", "100% Responsivo", "Botão WhatsApp"]
+        },
+        {
+          "title": "Site Essencial",
+          "price": "799",
+          "isPopular": true,
+          "description": "Perfeito para pequenas empresas e serviços.",
+          "url": "https://buy.stripe.com/eVqbJ101m0QZ2bOfp81B601",
+          "features": ["Até 3 Páginas", "Design Premium", "WhatsApp Flutuante"]
+        },
+        {
+          "title": "Site Profissional",
+          "price": "999",
+          "description": "Autoridade máxima para o seu negócio.",
+          "url": "https://buy.stripe.com/14A6oH01mbvDdUw6SC1B602",
+          "features": ["Até 5 Seções", "Tudo do Essencial", "Google Maps Incluso", "Blog de Notícias"]
+        }
+      ]
+    }
+  ],
+  "social_media": {
+    "instagram": "https://www.instagram.com/siteja.website?igsh=Y216Nml3YWhzZXR5",
+    "facebook": "https://www.facebook.com/profile.php?id=61585658536439"
+  }
+}
