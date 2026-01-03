@@ -1,0 +1,35 @@
+/*
+Theme Name: Site Já
+Theme URI: https://siteja.replit.app
+Description: Tema institucional dark moderno para a agência Site Já, com foco em conversão e entrega em 72h.
+Author: Replit Agent
+Version: 1.0
+Text Domain: site-ja
+*/
+
+/* 
+  Este tema utiliza Tailwind CSS via CDN para facilitar a cópia e uso imediato.
+  As cores principais estão definidas como variáveis CSS.
+*/
+
+:root {
+  --primary: #39FF14;
+  --background: #000000;
+  --secondary: #111111;
+}
+
+body {
+  background-color: var(--background);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.text-primary { color: var(--primary); }
+.bg-primary { background-color: var(--primary); }
+.border-primary { border-color: var(--primary); }
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(57, 255, 20, 0.5);
+}
+
+.bg-black-90 { background-color: rgba(0, 0, 0, 0.9); }
