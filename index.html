@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Já - Seu site profissional em até 72 horas</title>
+    <meta name="description" content="Criamos sites rápidos, modernos e focados em gerar contatos e vendas. Sites profissionais em 72h.">
+    
+    <!-- SEO / Social -->
+    <meta property="og:title" content="Site Já - Sites em 72h">
+    <meta property="og:description" content="Seu site pronto em tempo recorde.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#39FF14",
+                        background: "#000000",
+                        secondary: "#111111",
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px rgba(57, 255, 20, 0.5); }
+            50% { text-shadow: 0 0 20px rgba(57, 255, 20, 0.8), 0 0 30px rgba(57, 255, 20, 0.4); }
+            100% { text-shadow: 0 0 10px rgba(57, 255, 20, 0.5); }
+        }
+        .text-glow { animation: glow 2s infinite; }
+        .bg-glass { background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(10px); }
+        html { scroll-behavior: smooth; }
+        body { background-color: #000000; color: #ffffff; }
+        
+        .floating-wa {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 100;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+            transition: all 0.3s ease;
+        }
+        .floating-wa:hover { transform: scale(1.1); box-shadow: 0 15px 30px rgba(37, 211, 102, 0.5); }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-primary/30 selection:text-primary">
+
+    <!-- Header -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-6">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2">
+                <span class="text-2xl font-extrabold tracking-tighter text-white">SITE <span class="text-primary">JÁ</span></span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#how-it-works" class="text-sm font-medium text-gray-300 hover:text-primary transition-colors">Como funciona</a>
+                <a href="#features" class="text-sm font-medium text-gray-300 hover:text-primary transition-colors">Diferenciais</a>
+                <a href="#pricing" class="text-sm font-medium text-gray-300 hover:text-primary transition-colors">Planos</a>
+                <a href="https://wa.me/559491614484" target="_blank" class="px-5 py-2 rounded-lg border border-primary text-primary hover:bg-primary hover:text-black font-bold transition-all text-sm">
+                    Ver Planos
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-primary/10 via-transparent to-background"></div>
+        <div class="container relative z-10 px-4 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-semibold mb-8 backdrop-blur-sm">
+                <span class="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+                Sites Profissionais em 72h
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white mb-6 leading-[0.9]">
+                Seu site profissional <br>
+                <span class="text-primary text-glow">em até 72 horas</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Criamos sites rápidos, modernos e focados em gerar contatos e vendas para o seu negócio.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://wa.me/559491614484" target="_blank" class="w-full sm:w-auto bg-primary text-black px-8 py-4 rounded-xl font-black text-lg shadow-[0_0_30px_rgba(57,255,20,0.3)] hover:scale-105 transition-transform flex items-center justify-center gap-2">
+                    <i data-lucide="message-circle"></i>
+                    Solicitar Orçamento
+                </a>
+                <a href="#pricing" class="w-full sm:w-auto bg-white/5 border border-white/10 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-all">
+                    Ver Planos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-12 border-y border-white/5 bg-secondary/50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="text-3xl md:text-4xl font-black text-primary mb-1">+100</div>
+                    <div class="text-xs md:text-sm text-gray-500 uppercase tracking-widest">Sites entregues</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-black text-primary mb-1">100%</div>
+                    <div class="text-xs md:text-sm text-gray-500 uppercase tracking-widest">Design Responsivo</div>
+                </div>
+                <div class="col-span-2 md:col-span-1">
+                    <div class="text-3xl md:text-4xl font-black text-primary mb-1">72h</div>
+                    <div class="text-xs md:text-sm text-gray-500 uppercase tracking-widest">Entrega média</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works" class="py-24 bg-black">
+        <div class="container mx-auto px-4 text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-white mb-4">Como Funciona</h2>
+            <p class="text-gray-400 max-w-xl mx-auto">Processo simplificado para colocar seu negócio no mapa.</p>
+        </div>
+        
+        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-12">
+            <div class="text-center group">
+                <div class="w-20 h-20 bg-secondary border border-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:border-primary transition-all">
+                    <i data-lucide="layout" class="text-primary w-10 h-10"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">1. Escolha o plano</h3>
+                <p class="text-gray-500">Selecione o pacote ideal para suas necessidades atuais.</p>
+            </div>
+            <div class="text-center group">
+                <div class="w-20 h-20 bg-secondary border border-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:border-primary transition-all">
+                    <i data-lucide="message-circle" class="text-primary w-10 h-10"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">2. Envie informações</h3>
+                <p class="text-gray-500">Nos envie o conteúdo e fotos via WhatsApp.</p>
+            </div>
+            <div class="text-center group">
+                <div class="w-20 h-20 bg-secondary border border-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:border-primary transition-all">
+                    <i data-lucide="rocket" class="text-primary w-10 h-10"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">3. Site no Ar</h3>
+                <p class="text-gray-500">Seu site pronto e publicado em até 72 horas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-24 bg-secondary/30">
+        <div class="container mx-auto px-4 text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-white mb-4">Nossos Planos</h2>
+            <p class="text-gray-400 max-w-xl mx-auto">Investimento único. Resultado contínuo para sua marca.</p>
+        </div>
+        
+        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8 max-w-6xl">
+            <!-- Basic -->
+            <div class="bg-black/50 border border-white/10 p-8 rounded-3xl flex flex-col hover:border-white/20 transition-all">
+                <h3 class="text-2xl font-bold text-white mb-2">Landing Page</h3>
+                <div class="text-4xl font-black text-primary mb-4">R$ 599</div>
+                <p class="text-gray-400 mb-8 text-sm">Ideal para campanhas e vendas rápidas.</p>
+                <ul class="space-y-4 mb-10 text-gray-300 flex-1">
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="text-primary w-4 h-4"></i> Página Única Premium</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="text-primary w-4 h-4"></i> 100% Responsivo</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="text-primary w-4 h-4"></i> Botão WhatsApp</li>
+                </ul>
+                <a href="https://buy.stripe.com/dRmeVd01mfLT9Eg5Oy1B600" class="w-full py-4 rounded-xl border border-primary text-primary font-bold text-center hover:bg-primary hover:text-black transition-all">Começar Agora</a>
+            </div>
+            
+            <!-- Popular -->
+            <div class="bg-primary/5 border-2 border-primary p-8 rounded-3xl flex flex-col relative transform scale-105 shadow-[0_20px_50px_rgba(57,255,20,0.1)]">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-black px-4 py-1 rounded-full text-xs font-black uppercase">Mais Popular</div>
+                <h3 class="text-2xl font-bold text-white mb-2">Site Essencial</h3>
+                <div class="text-4xl font-black text-primary mb-4">R$ 799</div>
+                <p class="text-gray-400 mb-8 text-sm">Perfeito para pequenas empresas.</p>
+                <ul class="space-y-4 mb-10 text-gray-300 flex-1">
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="text-primary w-4 h-4"></i> Até 3 Páginas</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="text-primary w-4 h-4"></i> Design Premium</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="text-primary w-4 h-4"></i> WhatsApp Flutuante</li>
+                    <li class="flex items-center gap-2 text-gray-600"><i data-lucide="x" class="w-4 h-4"></i> Google Maps</li>
+                </ul>
+                <a href="https://buy.stripe.com/eVqbJ101m0QZ2bOfp81B601" class="w-full py-4 rounded-xl bg-primary text-black font-black text-center shadow-lg transition-all hover:brightness-110">Começar Agora</a>
+            </div>
+            
+            <!-- Pro -->
+            <div class="bg-black/50 border border-white/10 p-8 rounded-3xl flex flex-col hover:border-white/20 transition-all">
+                <h3 class="text-2xl font-bold text-white mb-2">Site Profissional</h3>
+                <div class="text-4xl font-black text-primary mb-4">R$ 999</div>
+                <p class="text-gray-400 mb-8 text-sm">Autoridade máxima para seu negócio.</p>
+                <ul class="space-y-4 mb-10 text-gray-300 flex-1">
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="text-primary w-4 h-4"></i> Até 5 Seções</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="text-primary w-4 h-4"></i> Tudo do Essencial</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="text-primary w-4 h-4"></i> Google Maps Incluso</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="text-primary w-4 h-4"></i> Blog de Notícias</li>
+                </ul>
+                <a href="https://buy.stripe.com/14A6oH01mbvDdUw6SC1B602" class="w-full py-4 rounded-xl border border-primary text-primary font-bold text-center hover:bg-primary hover:text-black transition-all">Começar Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-black border-t border-white/5 text-center">
+        <div class="container mx-auto px-4">
+            <div class="text-xl font-black tracking-tighter text-white mb-6">SITE <span class="text-primary">JÁ</span></div>
+            <div class="flex justify-center gap-6 mb-8 text-gray-500 text-sm">
+                <a href="https://www.instagram.com/siteja.website" class="hover:text-primary">Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=61585658536439" class="hover:text-primary">Facebook</a>
+                <a href="https://wa.me/559491614484" class="hover:text-primary">WhatsApp</a>
+            </div>
+            <p class="text-gray-600 text-xs">© 2026 Site Já – Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating -->
+    <a href="https://wa.me/559491614484" target="_blank" class="floating-wa">
+        <i data-lucide="message-circle" class="w-8 h-8"></i>
+    </a>
+
+    <script>
+        // Init Icons
+        lucide.createIcons();
+        
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-glass', 'py-4', 'border-b', 'border-white/10');
+                navbar.classList.remove('py-6');
+            } else {
+                navbar.classList.remove('bg-glass', 'py-4', 'border-b', 'border-white/10');
+                navbar.classList.add('py-6');
+            }
+        });
+    </script>
+</body>
+</html>

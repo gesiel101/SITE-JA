@@ -1,0 +1,100 @@
+Preciso que corrija o site para eu redireciona-lo utilizando o VERCEL conforme descrição a seguir: 
+
+Este projeto é uma landing page estática institucional da agência Site Já.
+Ele será usado apenas como site principal da agência.
+NÃO é WordPress, NÃO é backend, NÃO usa framework pesado.
+O objetivo é servir corretamente HTML como site final em domínio próprio.
+
+🎯 OBJETIVO FINAL
+
+Corrigir a estrutura do projeto para que:
+
+O navegador renderize o site, não faça download
+
+A Vercel/Replit sirva corretamente o index.html
+
+O domínio próprio funcione sem erros
+
+O site esteja pronto para produção agora
+
+🔹 ETAPA 1 — GARANTIR ENTRY POINT CORRETO
+
+Verifique se existe um arquivo index.html.
+
+Caso não exista, crie index.html na raiz do projeto.
+
+Todo o conteúdo da landing page deve estar dentro desse index.html.
+
+O arquivo deve conter:
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<body>
+
+📌 Não usar JSX, React, Vite ou qualquer build.
+
+ETAPA 2 — CORRIGIR HEADERS E MIME TYPE
+
+Garantir que o HTML seja servido como:
+
+Content-Type: text/html; charset=utf-8
+
+Caso o projeto utilize algum servidor simples (ex: Node):
+
+Ajustar para servir arquivos estáticos corretamente
+
+Se NÃO houver servidor:
+
+Garantir que o projeto funcione como site estático puro
+
+ETAPA 3 — CONFIGURAÇÃO PARA DEPLOY (ESSENCIAL)
+3.1 Criar arquivo vercel.json na raiz do projeto:
+{
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/html; charset=utf-8"
+        }
+      ]
+    }
+  ]
+}
+
+Isso força:
+
+Renderização correta
+
+Evita download automático
+
+Compatibilidade com domínio próprio
+
+ETAPA 4 — ESTRUTURA FINAL DO PROJETO
+
+O projeto deve terminar exatamente assim:
+
+/
+├── index.html
+├── vercel.json
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── main.js
+│   └── img/
+
+Todos os caminhos no HTML devem ser relativos, exemplo:
+<link rel="stylesheet" href="./assets/css/style.css">
+<script src="./assets/js/main.js"></script>
